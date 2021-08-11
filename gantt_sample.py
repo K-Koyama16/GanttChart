@@ -126,7 +126,6 @@ if st.button("Run"):
             time.sleep(1)
             st_now_time.write(now_time)
             
-            # 全探索せずに改良の余地大いにあり。
             for idx, add in enumerate(dic_add_datalist["M"]):
                 if add[4] == i:
                     dic_f["M"] = add_tasks(dic_f["M"], dic_add_datalist["M"][idx], default_layout["M"])
